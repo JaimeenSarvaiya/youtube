@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Menu Item</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="col-12 p-0">
+      <nav
+        class="navbar navbar-expand-lg font-weight-semi-bold navbar-dark py-3 navbar-theme"
+        style="letter-spacing: 0.01em"
+      >
+        <div class="container align-items-baseline">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/logo (1).png" alt="logo" /></a
+          ><button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarStandard"
+            aria-controls="navbarStandard"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarStandard"
+          >
+            <div
+              class="navbar-nav d-flex list-unstyled gap-5 align-items-baseline"
+            >
+              <ul class="d-flex list-unstyled gap-5">
+                <li>
+                  <a href="became-a-mentor.html" class="text-decoration-none">
+                    <div
+                      class="text-black fs-5"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Become a mentor
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                    <a href="find-a-mentor.html" class="text-decoration-none">
+                  <div
+                    class="text-black fs-5"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Find a mentor
+                  </div>
+                </a>
+                </li>
+                <li>
+                  <div
+                    class="text-black fs-5"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Menu Item
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-section">
+                <a href="create-account.html">
+                  <button type="button" class="signup-btn">Sign Up</button></a
+                >
+                <a href="login.html"
+                  ><button type="button" class="login-btn">Log In</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="filter-section"
+        style="
+          width: 100%;
+          border-top: 1px solid rgb(157, 157, 157);
+          border-bottom: 1px solid rgb(157, 157, 157);
+          padding: 10px 0px;
+        "
+      >
+        <div class="filter-inner-section container">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="filter-search-section col-md-6">
+              <form
+                id="search_frm"
+                name="search"
+                class="d-flex align-items-center"
+              >
+                <i class="fa-solid fa-magnifying-glass text-black-50 fs-4"></i>
+                <input
+                  class="form-control fs-5 text-black-50"
+                  type="text"
+                  placeholder="Search Mentor"
+                  name="search"
+                  style="border: none"
+                />
+              </form>
+            </div>
+            <div class="col-md-3 d-flex" style="justify-content: space-around">
+              <div class="dropdown col-md-3">
+                <a
+                  class="dropdown-toggle text-decoration-none text-black fs-6"
+                  type="button"
+                  id="dropdownbtn1"
+                  data-bs-toggle="dropdown"
+                >
+                  Sort by Country
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownbtn1"
+                  style="background-color: #fff; width: 210px"
+                >
+                  <input
+                    type="search"
+                    style="
+                      border-radius: 30px;
+                      border: 1px solid #aeaeae;
+                      width: 190px;
+                      display: flex;
+                      margin: 0 auto;
+                    "
+                  />
+                  <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                  <li><a class="dropdown-item" href="#">Albania</a></li>
+                  <li><a class="dropdown-item" href="#">Algeria</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown col-md-2">
+                <a
+                  class="dropdown-toggle text-decoration-none text-black"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sort by <span class="fw-bold">All</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Mentor</a></li>
+                  <li><a class="dropdown-item" href="#">MEntoree</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="owl-carousel owl-theme container mt-3">
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Human Resources</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Entrepreneurship</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Education</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Arts/Creative</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Media/Production</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Law</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Recreational</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2 d-flex text-center">
+          Information Technology & Service
+        </h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Health Care</h6>
+      </div>
+      <div
+        class="item"
+        style="
+          border: 1px solid rgb(197, 197, 197);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+        "
+      >
+        <h6 class="m-0 py-2">Financial Service</h6>
+      </div>
+    </div>
+
+    <div class="find-a-mentor-main-section">
+      <div
+        class="find-a-mentor-inner-section container d-flex flex-column gap-4"
+      >
+      <div class="row d-flex gap-5 justify-content-center mt-4">
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 230px 0 10px 20px">
+              Tallhark Dsauza<span class="pl-2"><img src="./assets/ch.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Accounting, Business Structure
+              </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-ff04859c28624f051227bfef7e364fbf (1).webp" alt="" style="border-radius: 20px"></a>
+        </div>
+
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 230px 0 10px 20px">
+              Surja Sen Das Raj
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Design/UI/UX </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-efe8c5b1ecc1b37ddaef3387d6799926.jpg" alt="" style="border-radius: 20px"></a>
+        </div>
+
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 180px 0 0 20px">
+              Gabriella Han
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">
+              Innovation Specialist at BRP-X...
+            </span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Business Development, </span><span class="">Capital Raising, </span><span class="" style="padding: 0 0 0 20px">Business Structure...</span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-f2d4ae279beca9e7cba7972a51b8ad04.jpg" alt="" style="border-radius: 20px"></a>
+        </div>
+
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 200px 0 0 20px">
+              Paula De La Cruz
+              <span><img src="./assets/ec.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">
+              Graphic Designer
+            </span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Illustrations, </span><span class="">Painting &amp; Body Art.. </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-fa14ab6a792284595a20b7ce821ab772.png" alt="" style="border-radius: 20px"></a>
+        </div>
+      </div>
+
+      <div class="row d-flex gap-5 justify-content-center mt-4">
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 180px 0 0 20px">
+              Jim Carfrae
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Growth Consultant &amp; Coach - h ...</span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Business Development, </span><span class="">Marketing &amp; Sales, </span><span class="" style="padding: 0 0 0 20px">Consulting...</span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-f8f4dd7ce26f467e9749c2869b9bb70c.webp" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 230px 0 10px 20px">
+              Ashok Vishwakarma
+              <span><img src="./assets/in.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Consulting, Skills Training Illustration
+              </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-e7bed5d56a470238547cc73cfd193fac.jpg" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 180px 0 0 20px">
+              Carry Ewart
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">
+              Consultant &amp; Financial Servic...
+            </span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Business Development, </span><span class="">Banking &amp; Marketing, </span><span class="" style="padding: 0 0 0 20px">Sales...</span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-fa3ca57c6f54e8a4a32295d8ec3fc840 (1).jpg" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="get-start-inner position-absolute">
+            <div class="img-section d-flex pt-4 pl-4 fs-4">
+              <i class="fa-solid fa-user text-white" style="
+                  background: orangered;
+                  padding: 20px 22px;
+                  border-radius: 50px;
+                "></i>
+            </div>
+            <h1 class="text-black" style="padding: 50px 0 0 20px">
+              Become a Mentor like them
+            </h1>
+          </div>
+          <a href="create-account.html" class="start-btn">Get Start</a>
+          <a href="#"><img class="card-img-top" src="./assets/become-bg.png" alt="" style="border-radius: 20px"></a>
+        </div>
+      </div>
+
+      <div class="row d-flex gap-5 justify-content-center mt-4">
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 220px 0 0 20px">
+              Jordan Weiner
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Business Development, Capital Raising...
+              </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-f62a8c2c3e6b3ac36ad2a6cfe7088373.png" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white "></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 230px 0 10px 20px">
+              Onimiya Nathan
+              <span><img src="./assets/ng.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Design/UI/UX </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-de53eb9c98ebfc50105e7ad5721c4082.png" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 180px 0 0 20px">
+              Darren Dolchand
+              <span><img src="./assets/ca.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">
+              Consultant &amp; Financial Servic...
+            </span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Business Development, </span><span class="">Capital Raising, </span><span class="" style="padding: 0 0 0 20px">Banking...</span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-ed8087b317183d7d4e1b02e452aa7a64.JPG" alt="" style="border-radius: 20px"></a>
+        </div>
+        <div class="card" style="
+            width: 18rem;
+            border: none;
+            height: 400px;
+            position: relative;
+            padding: 0;
+          ">
+          <div class="cards-inner position-absolute">
+            <div class="img-section d-flex justify-content-between p-3 fs-4">
+              <div class="heart-img">
+                <a href="#"><i class="fa-regular fa-user text-white"></i></a>
+              </div>
+              <div class="heart-img">
+                <a href="#">
+                  <i class="fa-regular fa-heart text-white"></i></a>
+              </div>
+            </div>
+            <h4 class="card-name text-white" style="padding: 200px 0 0 20px">
+              Kavyani Parwal
+              <span><img src="./assets/in.png" alt="" style="width: 8%; height: auto"></span>
+            </h4>
+            <span class="text-white" style="padding: 0 0 0 20px">
+              Consultant &amp; Financial Servic...
+            </span>
+            <br>
+            <span class="text-white" style="padding: 0 0 0 20px">Expert In</span>
+            <div class="text-white" style="font-size: 13px">
+              <span class="" style="padding: 0 0 0 20px">Illustrations, </span><span class="">Painting &amp; Graphic Design... </span>
+            </div>
+          </div>
+          <a href="#" class="card-btn">Visit Profile</a>
+          <a href="#"><img class="card-img-top" src="./assets/profile-image-e83d34e0f48ee1e74d96080ba382aaf9 (1).jpg" alt="" style="border-radius: 20px"></a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="browse-mentors-section">
+      <div class="browse-mentor-inner-section container footerContainer">
+        <div class="col-12">
+          <div class="browse-mentor-bg-img">
+            <div
+              class="browse-img-txt-section d-flex flex-column align-items-center gap-2 text-align-center"
+            >
+              <h1 class="text-center">
+                Seeking 4000+ mentors from 60+ countries
+              </h1>
+              <h6 class="text-center">
+                To help you achieve and overcome any challenges you face.
+              </h6>
+              <button type="button" class="browse-btn-big">
+                browse all mentors
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div
+        class="footer-innner-section d-flex container"
+        style="flex-wrap: wrap"
+      >
+        <div
+          class="footer-left-section col-md-6"
+          style="text-align: center !important"
+        >
+          <div class="footer-left-inner-section">
+            <a href="#"><img src="./assets/logo (1).png" alt="" /></a>
+            <div class="">
+              <p
+                class="text-center"
+                style="width: 100%; padding: 15px 0px !important"
+              >
+                Search amazing individuals around the globe, find a mentor,
+                expand your network, and learn from incredible people!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="text-align: center !important">
+          <h6 class="fs-5 fw-bold text-black">Explore</h6>
+
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://mentoree.com/mentors"
+                class="text-black-50 text-decoration-none"
+                >Search / Browse Mentors</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mentoree.com/registration/mentor"
+                class="text-black-50 text-decoration-none"
+                >Mentor Registration</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mentoree.com/registration/mentee"
+                class="text-black-50 text-decoration-none"
+                >Mentee Registration</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2" style="text-align: center !important">
+          <h6 class="fs-5 fw-bold text-black">About</h6>
+
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://mentoree.com/mentors"
+                class="text-black-50 text-decoration-none"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mentoree.com/registration/mentor"
+                class="text-black-50 text-decoration-none"
+              >
+                privacy policy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://mentoree.com/registration/mentee"
+                class="text-black-50 text-decoration-none"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2" style="text-align: center !important">
+          <h6 class="fs-5 fw-bold text-black">Social</h6>
+
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://mentoree.com/mentors"
+                class="text-black-50 text-decoration-none"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-section"
+          style="
+            border: 1px solid #d7d7d7;
+            width: 100%;
+            margin: 50px 0px 30px 0px;
+          "
+        ></div>
+
+        <div class="col-md-12">
+          <div class="copyright-section">
+            <p class="w-100">
+              Copyrights © Mentoree 2024. All Rights Reserved. A
+              <span
+                ><a href="#"
+                  ><img
+                    src="./assets/napkin-logo.png"
+                    class=""
+                    style="width: 70px" /></a
+              ></span>
+              Company
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 40,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
